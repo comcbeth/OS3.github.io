@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="OS3">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Open Source Silicon @ Stanford</title>
-    <link rel="stylesheet" href="bulma.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="Favicon.jpg">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Open Source Silicon @ Stanford</title>
+        <link rel="stylesheet" href="bulma.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+        <link rel="icon" type="image/x-icon" href="Favicon.jpg">
+    </head>
 <body>
     <header>
         <nav class="navbar is-light">
@@ -27,7 +27,7 @@
                         <a class="navbar-item" href="about.html">About Us</a>
                         <a class="navbar-item" href="sponsors.html">Sponsors</a>
                         <a class="navbar-item" href="blog.html">Blog</a>
-                        <a class="navbar-item" href="contact.html">Contact</a>
+                        <a class="navbar-item is-tab is-active" href="contact.html">Contact</a>
                         <a class="navbar-item" href="team.html">Meet the Team</a>
                         <a class="navbar-item" href="join.html">Join</a>
                     </div>
@@ -37,9 +37,56 @@
     </header>
 
     <main class="container mt-6">
-        <section id="welcome" class="content has-text-centered">
-            <h1 class="title">Welcome to Open Source Silicon @ Stanford</h1>
-            <p class="subtitle">We are a community of enthusiasts dedicated to designing open-source chips and advancing technology.</p>
+        <section id="contact" class="content">
+            <h2 class="title">Contact Us</h2>
+            <div class="columns">
+                <div class="column is-half">
+                    <form action="">
+                        <div class="field">
+                            <label class="label">Name</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Your Name">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Email</label>
+                            <div class="control">
+                                <input class="input" type="email" placeholder="Your Email">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Subject</label>
+                            <div class="control">
+                                <div class="select">
+                                <select>
+                                    <option>Select subject</option>
+                                    <option>Joining the team</option>
+                                    <option>Sponsorship</option>
+                                    <option>Other</option>
+                                </select>
+                                </div>
+                            </div>
+                        </div>                          
+                        <div class="field">
+                            <label class="label">Message</label>
+                            <div class="control">
+                                <textarea class="textarea" placeholder="Your Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <button class="button is-link">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="column is-half">
+                    <div class="content">
+                        <h3 class="subtitle">Contact Information</h3>
+                        <p><strong>Email:</strong> contact@stanfordsilicon.org</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
