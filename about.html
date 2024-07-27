@@ -24,7 +24,7 @@
                 </div>
                 <div id="navbarMenu" class="navbar-menu">
                     <div class="navbar-end">
-                        <a class="navbar-item is-tab is-active" href="about.html">About Us</a>
+                        <a class="navbar-item is-tab is-active" href="about.html">Projects</a>
                         <a class="navbar-item" href="sponsors.html">Sponsors</a>
                         <a class="navbar-item" href="blog.html">Blog</a>
                         <a class="navbar-item" href="contact.html">Contact</a>
@@ -36,15 +36,23 @@
         </nav>
     </header>
 
-    <main class="container mt-6">
+    <main class="container mt-6 block">
         <section id="about" class="content">
-            <h2 class="title">About Us</h2>
+            <h2 class="title">Projects</h2>
             <p class="subtitle">Learn more about the OS3, what we do, and our client of the year.</p>
-            <div class="video-container mb-4">
-                <iframe class="has-ratio" width="640" height="360" src="https://www.youtube.com/embed/example" frameborder="0" allowfullscreen></iframe>
+            <div class="columns is-multiline">
+                <div class="column is-half">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="content">
+                                <h3 class="title is-4 ">2024: Surgical Machine Interface & Real-Time Computing</h3>
+                                <p class="">Open-Source Silicon at Stanford (OS3) has partnered with a lab from Stanford Medicine to improve the way surgeons analyze and assess surgery videos in...</p>
+                                <a href="#" class="button is-link js-modal-trigger" data-target="modal-coreProject2024">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p>We are dedicated to advancing technology through open-source chip design...</p>
-            <!-- More content as needed -->
         </section>
     </main>
 
@@ -69,7 +77,7 @@
                     </span>
                 </a>
     
-                <a class="button is-medium is-primary has-text-white">
+                <a class="button is-medium is-primary has-text-white" href="https://stanford.enterprise.slack.com/archives/C06ECH58EHF">
                     <span class="icon">
                       <i class="fab fa-slack fa-lg"></i>
                     </span>
@@ -84,6 +92,36 @@
             <p>&copy; 2024 Open Source Silicon @ Stanford</p>
         </div>
     </footer>
+    <!--Projects-->
+    <div id="modal-coreProject2024" class="modal">
+        <div class="modal-background"></div>
+      
+        <div class="modal-card">
+            <header class="modal-card-head">
+              <p class="modal-card-title">2024: Surgical Machine Interface & Real-Time<br> Computing</p>
+              <button class="delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <h3 class="title is-4 ">Description</h3>
+                <p class="block">Open-Source Silicon at Stanford (OS3) has partnered with a lab from Stanford Medicine to improve the way surgeons analyze and assess surgery videos in real time. Currently, the video data is processed on a remote server using GPUs, which introduces a delay that can affect surgical outcomes. OS3 plans to develop technology that processes raw video data locally, significantly reducing this delay. This improvement is vital in medical projects where even a fraction of a second can make a difference.</p>
+                <h3 class="title is-4 ">The Future: Real-Time Micro-Inferencer Unit</h3>
+                <p class="block">The project focuses on developing the micro-inferencer unit, which uses application-specific integrated circuits (ASIC) and field-programmable gate arrays (FPGA) to handle various data types like video and sensor data. The μInferencer processes this data to produce outputs such as video encoding, segmentation, and pulsality, aiming to minimize delay. This advance in real-time data processing has applications in medical diagnostics and autonomous vehicles.</p>
+                <h3 class="title is-4 ">Timeline</h3>
+                <ul>
+                    <li><strong>Project Scope Defined:</strong> June 25, 2024</li> 
+                    <li><strong>Design Phase Begins:</strong> July 1, 2024</li> 
+                    <li><strong>Tapeout Deadline for SKY130:</strong> November 11, 2024</li> 
+                    <li><strong>SKY130 Tapeout Back from Fab:</strong> April 11, 2025</li> 
+                    <li><strong>TSMC 65 Shuttle:</strong> Spring 2025</li> 
+                </ul>
+            </section>
+            <footer class="modal-card-foot">
+              <div class="buttons">
+                <button class="modal-close is-large" aria-label="close"></button>
+              </div>
+            </footer>
+        </div>
+    </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -100,5 +138,6 @@
             }
         });
     </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
