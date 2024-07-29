@@ -8011,7 +8011,6 @@ button.dropdown-item.is-selected {
 .modal-card-title {
   color: var(--bulma-modal-card-title-color);
   flex-grow: 1;
-  flex-shrink: 0;
   font-size: var(--bulma-modal-card-title-size);
   line-height: var(--bulma-modal-card-title-line-height);
 }
