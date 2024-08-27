@@ -13538,7 +13538,7 @@ label.panel-block:hover {
 .hero {
   --bulma-hero-body-padding: 3rem 1.5rem;
   --bulma-hero-body-padding-tablet: 3rem 3rem;
-  --bulma-hero-body-padding-small: 1.5rem;
+  --bulma-hero-body-padding-small: 4rem;
   --bulma-hero-body-padding-medium: 9rem 4.5rem;
   --bulma-hero-body-padding-large: 18rem 6rem;
 }
